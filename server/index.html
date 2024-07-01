@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PMD Pup Server</title>
+</head>
+<body>
+    <!--<header>
+        <img src="src/img/logo_ngen.png">
+        <h1>Serveur télémétrique PMD</h1>
+    </header>-->
+    <div id="bodiv">
+        <fieldset>
+            <legend>Instructions</legend>
+            <span style="font-weight: bold;">» Lancez la page web sur mobile</span><br>
+            <span>• Renseignez l'IP du serveur télémétrique</span><br>
+            <span>• Confirmez, et observez la bonne connexion</span><br>
+            <span style="font-weight: bold;">» Lancez le simulateur web sur votre ordinateur</span><br>
+            <span>• Lancez la connexion au serveur télémétrique (votre ordinateur local)</span><br>
+            <br>
+            <span style="color: red;">» En cas d'erreur, vérifiez que votre ordinateur dispose d'une connexion au réseau local, ou que votre mobile est en Wifi et non 4G.</span>
+        </fieldset>
+        <fieldset>
+            <legend>Status</legend>
+            <div class="status-sep">
+                <span class="status-default status" id="status_liaison_mob">■</span><span>Liaison mobile</span>
+            </div>
+            <div class="status-sep">
+                <span class="status-default status" id="status_liaison_sim">■</span><span>Liaison simulateur</span>
+            </div>
+            <div class="status-sep">
+                <span class="status-default status" id="status_liaison_com">■</span><span>Communication</span>
+            </div>
+            <span><span style="font-weight: bold;">Adresse Locale: </span><span id="local_ip">chargement...</span></span>
+        </fieldset>
+        <fieldset>
+            <legend>Debug</legend>
+            <span style="font-weight: bold;">Ping: </span><span id="ping-challenge">100ms</span>
+        </fieldset>
+    </div>
+    <script src="./render.js"></script>
+</body>
+</html>
